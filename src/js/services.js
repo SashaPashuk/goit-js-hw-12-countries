@@ -11,7 +11,7 @@ const formateDate = (items) => {
     return[]
 }
 
-const fetchCountries = async (countryName) => {
+const featchCountries = async (countryName) => {
     try {
         const { date } = await axios.get(`/${countryName}`)
         const result = formatDate(data)

@@ -24,3 +24,4 @@ function reander(items) {
 function clearResultContainer() {
     $resultContainer.innerHTML = ''
 }
+// npm install --save-dev pnotify npm install --save material-design-icons

@@ -2,6 +2,7 @@ const countryCard = ({ name, capital, population, languages, flag }) => {
     return
     `
       <li>
+      <h2 class="country__title">${name}</h2>
       <h2 class = "wrap">
       <div class = "country__card">
       
@@ -19,7 +20,7 @@ const countryCard = ({ name, capital, population, languages, flag }) => {
       
       <ul class ="country__card-list">
       ${languages
-        .map(language => <li class ="country__card-item">${language.name}</li>)
+        .map(language => `<li class ="country__card-item">${language.name}</li>`)
         .join('')
     }
   </ul>
