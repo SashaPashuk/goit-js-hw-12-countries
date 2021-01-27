@@ -5,16 +5,16 @@ const BASE_URL = 'https://restcountries.eu/rest/v2/name'
 
 axios.defaults.baseURl = BASE_URL
 
-const formateDate = (items) => {
+const formateData = (items) => {
     if (items.length <= 10) return items
     pnotify.tooManyCountries()
     return[]
 }
 
-const featchCountries = async (countryName) => {
+const fetchCountries = async (countryName) => {
     try {
-        const { date } = await axios.get(`/${countryName}`)
-        const result = formatDate(data)
+        const { data } = await axios.get(`/${countryName}`)
+        const result = formateData(data)
         return result
         } catch (error) {
             pnotify.error(error.response.status)
@@ -22,4 +22,4 @@ const featchCountries = async (countryName) => {
         }
 }
 
-export default { featchCountries }
+export default { fetchCountries }
