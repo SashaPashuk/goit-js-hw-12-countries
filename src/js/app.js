@@ -2,8 +2,7 @@ import debounce from 'lodash.debounce'
 
 import { refs } from './constans'
 import API from './services'
-import { coutriesListMarkup } from './markups'
-
+import { countriesListMarkup } from './markups'
 
 const { $input, $resultContainer } = refs
 
