@@ -1,2 +1,2 @@
-import './styles.css';
-import './js/app'
+import './js/app';
+import './js/pnotify'

@@ -3,7 +3,7 @@ import pnotify from './pnotify'
 
 const BASE_URL = 'https://restcountries.eu/rest/v2/name/'
 
-axios.defaults.baseURl = BASE_URL
+axios.defaults.baseURL = BASE_URL
 
 const formatedData = (items) => {
     if (items.length <= 10) return items

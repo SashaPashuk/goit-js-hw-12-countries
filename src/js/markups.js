@@ -1,13 +1,12 @@
 const countryCard = ({ name, capital, population, languages, flag }) => {
     return `
       <li>
-      <h2 class="country__title">${name}</h2>
-      <div class = "wrap">
-      <div class = "country__card">
-      
-      <p class = "country__card-desc">
-      <strong>Capital:</strong> <span class ="country__card-value">${capital}</span>
-      </p>
+        <h2 class="country__title">${name}</h2>
+        <div class = "wrap">
+         <div class = "country__card">
+           <p class = "country__card-desc">
+             <strong>Capital:</strong> <span class ="country__card-value">${capital}</span>
+            </p>
       
       <p class ="country__card-desc">
       <strong>Population:</strong> <span class ="country__card-value">${population}</span>
