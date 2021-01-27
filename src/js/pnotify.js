@@ -11,7 +11,7 @@ const notFound = () => myPnotify('Not Found')
 const somethingWentWrong = () => myPnotify('Something went wrong')
 
 const errorMessage = (status) => {
-    status === 404 ? notFound(): somethingWentWrong()
+    status === 404 ? notFound() : somethingWentWrong()
 }
 
 export default {

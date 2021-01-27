@@ -24,7 +24,7 @@ const countryCard = ({ name, capital, population, languages, flag }) => {
   </ul>
   </div>
   <div class="country__image">
-  <img class = "country__image-flag" src = "$${flag}" alt = "${name}" width = "300" height = "300" />
+  <img class = "country__image-flag" src = "${flag}" alt = "${name}" width = "300" height = "300" />
   </div>
   </div>
   </li>

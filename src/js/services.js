@@ -1,11 +1,11 @@
 import axios from 'axios'
 import pnotify from './pnotify'
 
-const BASE_URL = 'https://restcountries.eu/rest/v2/name'
+const BASE_URL = 'https://restcountries.eu/rest/v2/name/'
 
 axios.defaults.baseURl = BASE_URL
 
-const formateData = (items) => {
+const formatedData = (items) => {
     if (items.length <= 10) return items
     pnotify.tooManyCountries()
     return[]
@@ -14,7 +14,7 @@ const formateData = (items) => {
 const fetchCountries = async (countryName) => {
     try {
         const { data } = await axios.get(`/${countryName}`)
-        const result = formateData(data)
+        const result = formatedData(data)
         return result
         } catch (error) {
             pnotify.error(error.response.status)
